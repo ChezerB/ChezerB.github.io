@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Banagua</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="normalize.css" />
+
+
+       <script>
+	src ="script.js"
+
+   </script>
+
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <h1>
+                WEB222 - Assignment 6
+            </h1>
+        </div>
+    </header>
+    <nav class="nav">
+            <ul>
+                <li><a href="honesty.html">Home</a></li>
+                <li><a href="info.html">Information</a></li>
+               
+            </ul>
+    </nav>
+
+    <div class="body">
+
+        <!-- Start your code here -->
+       <form id="signup" action=" https://httpbin.org/post" method="post" onsubmit='return formValidation();'>
+           <h2>Information</h2>
+
+
+           
+             
+               <input type="text" id='first_name' placeholder="Enter First Name" required />
+               <br />
+               <input type="hidden" name="lastName" id="lastName" value="Banagua"/>
+            
+               <input type="hidden" name="studentId" id="studentId" value="106145170" />
+
+               <input type="password" id="password_name" placeholder="Enter Password" required />
+               <br />
+               <input type="password" id="confirm_password_name" placeholder="Confirm password" required />
+               <br />
+               <input type="text" id="username" placeholder="Enter Username " required />
+               <br />
+               <br />
+           Education Level:  <select name="Education Level">
+                   <option value="0">- select -</option>
+                   <option value="Technical Diploma"> Technical Diploma</option>
+                   <option value= "College Diploma"> College Diploma</option>
+                   <option value="Bachelor's Degree">Bachelor's Degree</option>
+                   <option value="Master's Degree">Master's Degree</option>
+                   <option value="Other">Others</option>
+               </select>
+           <br />
+           <p>Education Status: </p>
+
+           <input type="radio" name="EduStatus" value="Graduated"> Graduated<br>
+           <input type="radio" name="EduStatus" value="Current enrolled"> Current enrolled<br>
+           <input type="radio" name="EduStatus" value="Did not graduate"> Did not graduate
+
+           <br />
+
+           Email: <input type="email" name="emailaddress" />
+           <br />
+           Age: <input type="number" name="age" min="18" max="60"/>
+         
+           <p>
+               <input type="submit" value="   Submit   " /> &nbsp;&nbsp;
+               <input type="reset" value="    Reset   " />
+           </p>
+         
+       
+
+
+
+
+
+
+
+
+       </form>
+        <!-- End your code here  -->
+
+    </div>
+    <footer class="footer">
+        <div class="center">
+            &copy; 2018 Chezer Banagua
+        </div>
+    
+    </footer>
+</body>
+</html>	  
